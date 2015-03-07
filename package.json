@@ -1,0 +1,23 @@
+{
+  "name": "mojang-api",
+  "version": "0.0.1",
+  "description": "A simple wrapper around Mojang's API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thechunknetwork/mojang-api.git"
+  },
+  "keywords": [
+    "minecraft",
+    "mojang"
+  ],
+  "author": "Tux <write@imaginarycode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thechunknetwork/mojang-api/issues"
+  },
+  "homepage": "https://github.com/thechunknetwork/mojang-api",
+  "dependencies": {
+    "request": "^2.53.0"
+  }
+}
