@@ -22,7 +22,7 @@ Example:
     var mojang = require('mojang-api');
     var date = new Date();
     date.setMonth(0); // 0 = January
-    mojang.uuidAt('jeb_', new Date(), function(err, res) {
+    mojang.uuidAt('jeb_', date, function(err, res) {
         if (err)
             console.log(err);
         else
