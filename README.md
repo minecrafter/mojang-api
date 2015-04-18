@@ -1,5 +1,7 @@
 # mojang-api
 
+[npm](https://www.npmjs.com/package/mojang-api)
+
 `mojang-api` is a simple wrapper around the [Mojang API](http://wiki.vg/Mojang_API). It is simple and low-dependency (only needing the
 excellent [request](https://www.npmjs.com/package/request) library).
 
