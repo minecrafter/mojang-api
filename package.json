@@ -1,8 +1,11 @@
 {
   "name": "mojang-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple wrapper around Mojang's API",
   "main": "index.js",
+  "scripts": {
+    "test": "lab --verbose --colors"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/thechunknetwork/mojang-api.git"
@@ -19,5 +22,9 @@
   "homepage": "https://github.com/thechunknetwork/mojang-api",
   "dependencies": {
     "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "lab": "^5.9.0"
   }
 }
