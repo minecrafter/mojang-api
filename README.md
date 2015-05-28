@@ -11,7 +11,7 @@ excellent [request](https://www.npmjs.com/package/request) library).
 
 ## Usage
 
-### mojang.uuidAt(username, time, cb)
+### MojangAPI.uuidAt(username, time, cb)
 
 Parameters:
 
@@ -21,17 +21,17 @@ Parameters:
 
 Example:
 
-    var mojang = require('mojang-api');
+    var MojangAPI = require('mojang-api');
     var date = new Date();
     date.setMonth(0); // 0 = January
-    mojang.uuidAt('jeb_', date, function(err, res) {
+    MojangAPI.uuidAt('jeb_', date, function(err, res) {
         if (err)
             console.log(err);
         else
             console.log("On " + date + ", jeb_'s UUID was " + res.id);
     });
 
-### mojang.nameHistory(uuid, cb)
+### MojangAPI.nameHistory(uuid, cb)
 
 Parameters:
 
@@ -40,8 +40,8 @@ Parameters:
 
 Example:
 
-    var mojang = require('mojang-api');
-    mojang.nameHistory('853c80ef3c3749fdaa49938b674adae6', function(err, res) {
+    var MojangAPI = require('mojang-api');
+    MojangAPI.nameHistory('853c80ef3c3749fdaa49938b674adae6', function(err, res) {
         if (err)
             console.log(err);
         else {
@@ -55,7 +55,7 @@ Example:
         }
     });
 
-### mojang.nameToUuid(names, cb)
+### MojangAPI.nameToUuid(names, cb)
 
 Parameters:
 
@@ -64,8 +64,8 @@ Parameters:
 
 Example:
 
-    var mojang = require('mojang-api');
-    mojang.nameToUuid('jeb_', function(err, res) {
+    var MojangAPI = require('mojang-api');
+    MojangAPI.nameToUuid('jeb_', function(err, res) {
         if (err)
             console.log(err);
         else {
@@ -73,7 +73,7 @@ Example:
         }
     });
 
-### mojang.profile(uuid, cb)
+### MojangAPI.profile(uuid, cb)
 
 Parameters:
 
@@ -82,8 +82,8 @@ Parameters:
 
 Example:
 
-    var mojang = require('mojang-api');
-    mojang.profile('853c80ef3c3749fdaa49938b674adae6', function(err, res) {
+    var MojangAPI = require('mojang-api');
+    MojangAPI.profile('853c80ef3c3749fdaa49938b674adae6', function(err, res) {
         if (err)
             console.log(err);
         else {
